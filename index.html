@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandbox Test - Placeholder Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .test-grid {
+            background-image: radial-gradient(#222 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="bg-[#111] text-gray-300 font-mono test-grid min-h-screen">
+
+    <header class="p-8 border-b border-gray-800 flex justify-between items-center bg-black/50 backdrop-blur-md sticky top-0">
+        <div class="text-xl font-bold text-blue-500">[ SANDBOX_TEST ]</div>
+        <nav class="space-x-4 text-xs">
+            <span class="hover:text-white cursor-pointer">MODULE_01</span>
+            <span class="hover:text-white cursor-pointer">MODULE_02</span>
+            <span class="text-red-500">LIVE_STATUS: OFF</span>
+        </nav>
+    </header>
+
+    <main class="max-w-4xl mx-auto mt-20 px-6 text-center">
+        <h1 class="text-4xl font-black text-white mb-4 italic tracking-widest">DUMMY ENVIRONMENT</h1>
+        <p class="text-sm text-gray-500 mb-10 leading-relaxed">
+            Halaman ini hanya digunakan untuk pengujian SOP, layouting, dan pengecekan responsivitas <br>
+            sebelum data dipindahkan ke domain utama (main.itzhub).
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="p-6 bg-[#1a1a1a] border border-gray-800 rounded-lg hover:border-blue-900 transition-all">
+                <h2 class="text-blue-400 mb-2 font-bold">Data Test A</h2>
+                <p class="text-xs text-gray-500">Cek apakah font rendering bekerja dengan baik di perangkat mobile.</p>
+            </div>
+            
+            <div class="p-6 bg-[#1a1a1a] border border-gray-800 rounded-lg hover:border-blue-900 transition-all">
+                <h2 class="text-blue-400 mb-2 font-bold">Data Test B</h2>
+                <p class="text-xs text-gray-500">Cek apakah skema warna kontras untuk pembacaan cepat.</p>
+            </div>
+        </div>
+
+        <div class="mt-12 flex justify-center gap-4">
+            <button class="px-6 py-2 border border-blue-500 text-blue-500 text-xs hover:bg-blue-500 hover:text-white transition">RUN SCRIPT</button>
+            <button class="px-6 py-2 border border-gray-700 text-gray-700 text-xs hover:bg-gray-800 transition">CLEAR CACHE</button>
+        </div>
+    </main>
+
+    <footer class="fixed bottom-0 w-full p-4 bg-black border-t border-gray-800 text-[10px] flex
+    
